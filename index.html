@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>обучение игре на гитаре в бобруйске</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<!--sprite-->
+<svg style="display:none;">
+	<symbol id="vk" viewBox="0 0 32 32">
+		<g>
+			<path
+				d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM25.919 22.4l-2.925 0.044c0 0-0.631 0.125-1.456-0.444-1.094-0.75-2.125-2.706-2.931-2.45-0.813 0.256-0.788 2.012-0.788 2.012s0.006 0.375-0.181 0.575c-0.2 0.219-0.6 0.262-0.6 0.262h-1.306c0 0-2.888 0.175-5.431-2.475-2.775-2.887-5.225-8.619-5.225-8.619s-0.144-0.375 0.013-0.556c0.175-0.206 0.644-0.219 0.644-0.219l3.131-0.019c0 0 0.294 0.050 0.506 0.206 0.175 0.125 0.269 0.369 0.269 0.369s0.506 1.281 1.175 2.438c1.306 2.256 1.919 2.75 2.362 2.513 0.644-0.35 0.45-3.194 0.45-3.194s0.012-1.031-0.325-1.488c-0.262-0.356-0.756-0.463-0.969-0.488-0.175-0.025 0.113-0.431 0.488-0.619 0.563-0.275 1.556-0.294 2.731-0.281 0.913 0.006 1.181 0.069 1.538 0.15 1.081 0.262 0.712 1.269 0.712 3.681 0 0.775-0.137 1.863 0.419 2.219 0.238 0.156 0.825 0.025 2.294-2.469 0.694-1.181 1.219-2.569 1.219-2.569s0.113-0.25 0.288-0.356c0.181-0.106 0.425-0.075 0.425-0.075l3.294-0.019c0 0 0.988-0.119 1.15 0.331 0.169 0.469-0.369 1.563-1.712 3.356-2.206 2.944-2.456 2.669-0.619 4.369 1.75 1.625 2.113 2.419 2.175 2.519 0.712 1.2-0.813 1.294-0.813 1.294z"></path>
+		</g>
+	</symbol>
+</svg>
+<svg style="display:none;">
+	<symbol id="youtube" viewBox="0 0 32 32">
+		<g>
+			<path
+				d="M31.681 9.6c0 0-0.313-2.206-1.275-3.175-1.219-1.275-2.581-1.281-3.206-1.356-4.475-0.325-11.194-0.325-11.194-0.325h-0.012c0 0-6.719 0-11.194 0.325-0.625 0.075-1.987 0.081-3.206 1.356-0.963 0.969-1.269 3.175-1.269 3.175s-0.319 2.588-0.319 5.181v2.425c0 2.587 0.319 5.181 0.319 5.181s0.313 2.206 1.269 3.175c1.219 1.275 2.819 1.231 3.531 1.369 2.563 0.244 10.881 0.319 10.881 0.319s6.725-0.012 11.2-0.331c0.625-0.075 1.988-0.081 3.206-1.356 0.962-0.969 1.275-3.175 1.275-3.175s0.319-2.587 0.319-5.181v-2.425c-0.006-2.588-0.325-5.181-0.325-5.181zM12.694 20.15v-8.994l8.644 4.513-8.644 4.481z"></path>
+		</g>
+	</symbol>
+</svg>
+
+<header class="header">
+	<div class="header__top">
+		<div class="container">
+			<div class="header__contacts">
+				<a class="header__phone" href="tel:375444739481">+37544 47-39-481</a>
+				<a href="https://vk.com/id459488160" class="header__vk" target="_blank">
+					<svg class="icon-vk">
+						<use xlink:href="#vk"></use>
+					</svg>
+				</a>
+				<a class="advice-btn" data-fancybox data-src="#modal" href="javascript:;">Консультация</a>
+			</div>
+		</div>
+	</div>
+	<div class="header__content">
+		<div class="container">
+			<div class="header__content-inner">
+				<!--.header__logo>a[href=#]>img[src=img/logo.png]-->
+				<div class="logo">
+					<a href="http://gitaramania.by/" class="logo__link">
+						gitaramania.by
+					</a>
+				</div>
+				
+				<nav class="menu">
+					<div class="btn-menu" id="btn">
+						<span class="btn-menu__icon-bars"></span>
+						<span class="btn-menu__icon-bars"></span>
+						<span class="btn-menu__icon-bars"></span>
+					</div>
+					<!--ul>li*4>a[href=#]-->
+					<ul class="menu__list" id="mobyle">
+						<li class="menu__item">
+							<a class="menu__link" href="https://andreychernetsky.github.io/gitaraMania/app/index.html" target="_blank">Гитара</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://andreychernetsky.github.io/siteProgrammer/app/index.html" target="_blank">Программирование</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://andreychernetsky.github.io/siteForGame/app/game.html" target="_blank">Настольная игротека</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="image">
+	<picture>
+		<source media="(min-width:1200px)" srcset="img/dekstop.jpg" alt="music studio">
+		<source media="(min-width:768px)" srcset="img/mobyle.jpg">
+		<source media="(min-width:320px)" srcset="img/mobyle2.jpg">
+		<img class="image__picture" width="100%" src="img/dekstop.jpg" alt="music studio">
+	</picture>
+</div>
+<div class="line"></div>
+<main class="main">
+	<!--	<section class="slider">
+			<div class="container">
+				<div class="section">
+					<h3 class="section__subtitle">Основные направления</h3>
+					<h2 class="section__title">Моего процесса обучения</h2>
+					<div class="section__text">
+						<p class="section__descrip">
+							Становления музыкальной культуры личности, а через неё – художественной, эстетической и общей духовной культуры должно начинаться в раннем детстве, когда у ребёнка еще
+							не сложились интересы, привычки, вкусы, которые нужно ломать или перестраивать. Маленький ребенок открыт, доверчив восприимчив. Именно в дошкольном возрасте формируются
+							эталоны красоты, ребёнок накапливает тот опыт деятельности, от которого во многом зависит его последующее музыкальное и общее развитие.
+						</p>
+					</div>
+				</div>
+				<section class="info">
+					<div class="container">
+						<div class="info__inner">
+							<div class="info__video">
+								<img class="info__picture" src="img/mainFoto/forSleder.png" alt="" width="100%">
+							</div>&lt;!&ndash;info__video&ndash;&gt;
+							<section class="info__slider slider">
+								
+								<article class="slider__item fade">
+									<h2 class="slider__title">
+										Обучение игре на гитаре
+									</h2>
+									<ul class="slider__list list">
+										<li class="list__item"><span>5-18 лет</span></li>
+										<li class="list__item">Изучение нотной грамоты.</li>
+										<li class="list__item">Изучаем построение аккордов</li>
+										<li class="list__item">Изучение различных видов боя и переборов</li>
+										<li class="list__item">Развиваем навык подбора по слуху</li>
+										<li class="list__item">Учимся подбирать аккорды к мелодиям и песням</li>
+										<li class="list__item">Знакомимся с импровизацией и сочинением музыки</li>
+										<li class="list__item">Исполнение классических пьес</li>
+									</ul>
+								</article>
+								<article class="slider__item fade">
+									<h2 class="slider__title">
+										Программы для работы с музыкой
+									</h2>
+									<ul class="slider__list list">
+										<li class="list__item">Sibelius</li>
+										<li class="list__item">Cubase</li>
+										<li class="list__item">Fruity loops</li>
+										<li class="list__item">Guitar pro</li>
+									</ul>
+								</article>
+								<article class="slider__item fade">
+									<h2 class="slider__title">
+										Игротека на развитие познавательных способностей ребенка
+									</h2>
+									<ul class="slider__list list">
+										<li class="list__item"><span>5-12 лет</span></li>
+										<li class="list__item">Фантазия и воображение</li>
+										<li class="list__item">Координация</li>
+										<li class="list__item">Пространственное мышление</li>
+										<li class="list__item">Реакция и наблюдательность</li>
+										<li class="list__item">Математический счет</li>
+										<li class="list__item">Речь и словарный запас</li>
+										<li class="list__item">Внимательность</li>
+										<li class="list__item">Ловкость</li>
+										<li class="list__item">Наблюдательность</li>
+										<li class="list__item">Стратегическое мышление</li>
+									</ul>
+								</article>
+							</section>&lt;!&ndash;info__item&ndash;&gt;
+						</div>
+						<div class="dot">
+							<span class="dot__item" onclick="currentSlide(1)"></span>
+							<span class="dot__item" onclick="currentSlide(2)"></span>
+							<span class="dot__item" onclick="currentSlide(3)"></span>
+						</div>
+					</div>  &lt;!&ndash;container&ndash;&gt;
+				</section>
+			</div>
+		</section>-->
+	
+	<div id="modal" class="modal">
+		<h2>Привет!</h2>
+		<p>Все пожелание пишите в контакте</p>
+	</div>
+	
+	<div class="line"></div>
+	<section class="lectures" id="blog">
+		<div class="container">
+			<div class="section">
+				<h2 class="section__title">Объединение сольфеджио и теории музыки
+					в практических заданиях на своем инструменте.
+				</h2>
+				<div class="section__text">
+					<p class="section__descrip">
+						Ищу всех тех кому интересен такой подход в занятиях, где помимо исполнительского навыка будет развиваться и теоретический с практическим применением на своем
+						инструменте.
+						Тут неважно на каком инструменте вы играете. Поэтому упражнения делаю как понимаю, и если найдутся более продвинутые гуру и помогут советом, различными идеями буду
+						весьма
+						благодарен.
+					</p>
+					<!--	<p class="section__descrip">Основная цель моего процесса обучения, которую стремлюсь создавать для тех, кто приходит ко мне учиться. Создание через призму музыки такой
+							информационной среды, которая позволила бы развивать нужные для сегодняшнего времени черты в характере ребенка, чтобы через годы он смог самостоятельно двигаться в
+							своем
+							процессе обучения и это касается не только музыки.</p>-->
+					<a class="section__link" href="https://vk.com/club189091276">ссылка на группу </a>
+					<div class="section">
+						<div class="section__header">
+							<h3 class="section__suptitle">цель лекций.</h3>
+							<h2 class="section__title">в практических заданиях на своем инструменте</h2>
+						</div>
+					</div>
+					<!--	<ul class="list">
+							<li class="list__item"></li>
+							<li class="list__item"></li>
+							<li class="list__item"></li>
+							<li class="list__item"></li>
+							<li class="list__item"></li>
+						</ul>-->
+				</div>
+			</div>
+			<div class="blog">
+				<div class="section">
+					<div class="section__header">
+						<h3 class="section__suptitle">диезы</h3>
+					</div>
+				</div>
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty-am-f-g-am-solo-i-bas" target="_blank">
+						<div class="blog__header">
+							<img class="blog__photo" src="img/hords/Am.jpg" alt="music">
+							<div class="blog__wrap">
+								<span class="blog__year">2019.</span>
+								<span class="blog__month">10.</span>
+								<span class="blog__day">06</span>
+							</div>
+							<div class="blog__content">
+								<div class="blog__text">
+									Am F G Am
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty" target="_blank">
+						<div class="blog__header">
+							<img class="blog__photo" src="img/hords/Em.jpg" alt="music">
+							<div class="blog__wrap">
+								<span class="blog__year">2019.</span>
+								<span class="blog__month">10.</span>
+								<span class="blog__day">26</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								Em C D Em
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty-dm-b-fm-dm">
+						<div class="blog__header">
+							<img class="blog__photo" src="img/hords/Bm.jpg" alt="music">
+							
+							<div class="blog__wrap">
+								<span class="blog__year">2019.</span>
+								<span class="blog__month">11.</span>
+								<span class="blog__day">23.</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								Bm G A Bm
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="blog">
+				<div class="blog__item">
+					<a href="https://vk.com/@-189091276-akkordovye-noty-fm-d-e-fm" target="_blank">
+						<div class="blog__header">
+							<img class="blog__photo" src="img/hords/F%23m.jpg" alt="music">
+							<div class="blog__wrap">
+								<span class="blog__year">2019.</span>
+								<span class="blog__month">11.</span>
+								<span class="blog__day">21</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								F#m D E F#m
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty-cm-a-b-cm" target="_blank">
+						<div class="blog__header">
+							<img class="blog__photo" src="img/hords/C%23m.jpg" alt="music">
+							<div class="blog__wrap">
+								<span class="blog__year">2020.</span>
+								<span class="blog__month">01.</span>
+								<span class="blog__day">29</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								C#m A B C#m
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty-gm-e-f-gm" target="_blank">
+						<div class="blog__header">
+							<img class="blog__photo" src="img/hords/G%23m.jpg" alt="music">
+							<div class="blog__wrap">
+								<span class="blog__year">2020.</span>
+								<span class="blog__month">02.</span>
+								<span class="blog__day">15</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								G#m E F# G#m
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="blog">
+				<div class="section">
+					<div class="section__header">
+						<h3 class="section__suptitle">бемоли</h3>
+					</div>
+				</div>
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty-dm-b-c-dm" target="_blank">
+						<div class="blog__header">
+							<img src="img/hords/Bm.jpg" alt="" class="blog__photo">
+							<div class="blog__wrap">
+								<span class="blog__year">2020.</span>
+								<span class="blog__month">03.</span>
+								<span class="blog__month">27</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								Dm C B Dm
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty-gm-eb-f-gm" target="_blank">
+						<div class="blog__header">
+							<img src="img/hords/Bm.jpg" alt="" class="blog__photo">
+							<div class="blog__wrap">
+								<span class="blog__year">2020.</span>
+								<span class="blog__month">03.</span>
+								<span class="blog__month">27</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								Gm Es F Gm
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty-solo-i-bas-sm-ab-b-cm" target="_blank">
+						<div class="blog__header">
+							<img src="img/hords/Bm.jpg" alt="" class="blog__photo">
+							<div class="blog__wrap">
+								<span class="blog__year">2020.</span>
+								<span class="blog__month">03.</span>
+								<span class="blog__month">27</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								Cm Ab Bb Cm
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="blog">
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty-fm-d-eb-fm" target="_blank">
+						<div class="blog__header">
+							<img src="img/hords/Bm.jpg" alt="" class="blog__photo">
+							<div class="blog__wrap">
+								<span class="blog__year">2020.</span>
+								<span class="blog__month">03.</span>
+								<span class="blog__month">27</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								Fm D Eb Fm
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty-bbm-g-db-bbm" target="_blank">
+						<div class="blog__header">
+							<img src="img/hords/Bm.jpg" alt="" class="blog__photo">
+							<div class="blog__wrap">
+								<span class="blog__year">2020.</span>
+								<span class="blog__month">03.</span>
+								<span class="blog__month">27</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								Bbm G Db Bbm
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="blog__item">
+					<a class="blog__link" href="https://vk.com/@-189091276-akkordovye-noty-ebm-cb-db-ebm" target="_blank">
+						<div class="blog__header">
+							<img src="img/hords/Bm.jpg" alt="" class="blog__photo">
+							<div class="blog__wrap">
+								<span class="blog__year">2020.</span>
+								<span class="blog__month">03.</span>
+								<span class="blog__month">27</span>
+							</div>
+						</div>
+						<div class="blog__content">
+							<div class="blog__text">
+								Ebm Cb Db Ebm
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__content">
+			<div class="footer__inner">
+				<div class="footer__info">
+					<h2 class="footer__title">gitaramania.by</h2>
+					<div class="footer__text">
+						обучение игре на гитаре в Бобруйске
+					</div>
+					<div class="footer__text">
+						ул.Ковзана, 5 (Авиагородок Бобруйск)
+					</div>
+				</div>
+				<div class="footer__schedule">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link" href="tel:375444739481">(+375)44 47-39-481</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="mail:375444739481">andreyitmega@gmail.com</a>
+						</li>
+						<li class="footer__item">
+							сббота с 13-20
+						</li>
+						<li class="footer__item">
+							воскреcенье с 13-20
+						</li>
+					</ul>
+				</div>
+				<div class="footer__social">
+					<a class="footer__social-link" href="https://vk.com/id459488160" target="_blank">
+						<svg class="footer__icon-vk">
+							<use xlink:href="#vk"></use>
+						</svg>
+					</a>
+					<a class="footer__social-link" href="https://www.youtube.com/channel/UCf0lyVh5MWFgqo5jWBIupvA?view_as=subscriber" target="_blank">
+						<svg class="footer__icon-youtube">
+							<use xlink:href="#yotube"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer__copy">
+				<div class="container">
+					<div class="copy__text">
+						© 2020 gitaramania.by
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

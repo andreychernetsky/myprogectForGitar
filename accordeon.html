@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<style>
+	/*accordion*/
+	/* Accordion-rule */
+	
+	.accordion-rule {
+		width: 100%;
+		margin-bottom: 10px;
+		box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+		
+	}
+	
+	.accordion-rule__header {
+		margin: 10px 0;
+		font-size: 1.8rem;
+		display: flex;
+		background-color: #f9f9f9;
+		
+		position: relative;
+		border-bottom: 1px solid transparent;
+	}
+	
+	.accordion-rule__icon {
+		margin-right: 20%;
+		left: 0;
+		background: #ffc222;
+		color: #ffffff;
+		display: block;
+		width: 30px;
+	}
+	
+	.accordion-rule__content {
+		font-size: 1.4rem;
+		display: none;
+	}
+	
+	.accordion-rule__content.open {
+		padding: 10px 35px;
+		display: block;
+		animation: fade linear 1.5s;
+	}
+	
+	span {
+		text-align: center;
+	}
+	
+	@keyframes fade {
+		from {
+			opacity: .4;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	.accordion {
+		width: 100%;
+		background: #fff;
+		border: 1px solid #333;
+		text-align: left;
+	}
+	
+	.accordion__title {
+		-webkit-appearance: none;
+		font-size: 1.1rem;
+		/*   text-transform: uppercase; */
+		letter-spacing: 2px;
+		padding: 1rem 1.5rem;
+		background: #333;
+		color: white;
+		cursor: pointer;
+		transition: .3s ease;
+		border: 0 none;
+		border-bottom: 1px solid #555;
+		width: 100%;
+		text-align: left;
+		margin: 0;
+	}
+	
+	.accordion__title:hover, .accordion__title:focus {
+		background: #000;
+	}
+	
+	.accordion__copy {
+		overflow: hidden;
+		padding: 0 1.5rem 0 1.5rem;
+		color: #666;
+		line-height: 1.6;
+		font-size: 1rem;
+		font-weight: 500;
+		max-height: 0;
+		transition: padding 0.5s, max-height 0.5s;
+	}
+	
+	.accordion__copy__pic {
+		width: 100px;
+		height: auto;
+		float: right;
+		margin: 0 0 0 20px;
+	}
+	
+	@media (min-width: 540px) {
+		.wrap-container__head {
+			font-size: 2rem;
+		}
+		
+		.accordion__copy__pic {
+			width: 180px;
+		}
+	}
+
+</style>
+<!--accordion-->
+<div class="accordion">
+	<div class="container">
+		<div class="accordion__item">
+			<button type="button" class="accordion__title js-title"> Первое звено - возраст от 5-8.</button>
+			<div class="accordion__copy">
+				<img src="https://pp.userapi.com/c630124/v630124976/2830a/mySNDxnyqGw.jpg" alt="piano accordion"
+						 class="accordion__copy__pic">
+				<p>
+					<span>Первое звено - возраст от 5-8.</span> Обучение в комплексном подходе.
+					Занятие проводится как индивидуально, так и в небольших группах до 4 человек.
+					<span>Музыкальная минутка включает в себя:</span>
+				</p>
+				
+				
+				<p>
+					Задания составляются таким образом, чтобы задействовать множество познавательных навыков:
+					сосредоточенность, логика, пространственное мышление, креативность.
+				</p>
+			
+			
+			</div>
+		</div>
+		<div class="accordion__item">
+			<button type="button" class="accordion__title js-title">Музыкальная минутка включает в себя:</button>
+			<div class="accordion__copy"><img
+				src="https://sun1.dataix-by-minsk.userapi.com/c638819/v638819145/7339/wucSKcf4UaU.jpg"
+				alt="button accordion" class="accordion__copy__pic">
+				
+				<p>
+					- Учим под аккомпанемент гитары песни, четверостишья, скороговорки;
+					- изучаем нотную грамоту, знакомимся с музыкальными инструментами, которые есть в студии (гитара,
+					фортепиано);
+					- выполняем творческие задания для освоения нотной грамоты и музыкального инструмента.
+				</p>
+			
+			
+			</div>
+		</div>
+		<div class="accordion__item">
+			<button type="button" class="accordion__title js-title">игротека на развитие познавательных способностей
+			</button>
+			
+			<div class="accordion__copy">
+				<img
+					src="https://sun1.dataix-by-minsk.userapi.com/c638819/v638819145/7339/wucSKcf4UaU.jpg"
+					alt="button accordion" class="accordion__copy__pic">
+				<p>
+					<span>Вторая часть урока</span> - игротека на развитие познавательных способностей.
+					Настольные игры специально подбираются на развитие одного познавательного навыка: счет, речь, абстрактное
+					мышление, мелкая моторика, воображение.
+				</p>
+			
+			</div>
+		</div>
+		<div class="accordion__item">
+			<button type="button" class="accordion__title js-title">Основное</button>
+			<div class="accordion__copy">Для того, чтобы достичь высот в любом деле, нужно вкалывать и вкладывать свое
+				время, нарабатывая те самые заветные 10.000 часов. Только загвоздка в том, что можно месяцами и годами
+				терзать гитару, но если ваши ежедневные занятия построены неэффективно, если вы делаете “не то” или “не
+				так”, это не приведет ни к какому результату.
+			</div>
+		</div>
+		<div class="accordion__item">
+			<button type="button" class="accordion__title js-title">Основное</button>
+			<div class="accordion__copy">Игровые методы не только делают обучение увлекательным и интересным для детей
+				делом, но и обеспечивают потрясающее качественное освоение знаний и навыков. То, что ребенок вызубрил –
+				он может забыть через несколько дней, то, что освоил в игре – он запомнит на всю жизнь.
+				
+				
+				-Проявления воли и характера в постоянном, <br>
+				систематическом выполнении музыкальных задач;
+				-своевременная оплата без напоминания; <br>
+				-посещения мероприятий, которые проводятся в студии;
+				<br>
+				-заинтересованность родителей в обеспечении необходимым для процесса обучения (гитара, нотная тетрадь);
+				<br>
+				-распечатка определенного количества страниц для пополнения нотной библиотеки.
+			</div>
+		</div>
+		<div class="wrap-container__notes">элементы для сайта<a
+			href="https://andreychernetsky.github.io/finishSiteForMusic/index.html" target="_blank">gutaramanua.by</a>.
+		</div>
+	</div>
+</div>
+<!--the end accordion-->
+<script>
+  (function acc() {
+    let copyOpen = "accordion__copy--open";
+    let titles = document.querySelectorAll(".js-title");
+    for (let i = 0; i < titles.length; i++) {
+      titles[i].addEventListener("click", toggleItem, false);
+    }
+
+    function toggleItem(e) {
+      let openCopy = document.querySelector("." + copyOpen);
+      let sameElem = false;
+      if (openCopy) {
+        closeItem(openCopy);
+        sameElem = openCopy.previousElementSibling === e.target;
+      }
+      if (!sameElem) {
+        let panel = e.target.nextElementSibling;
+        openItem(panel);
+      }
+    }
+
+    function closeItem(openCopy) {
+      openCopy.classList.remove(copyOpen);
+      openCopy.style.maxHeight = 0;
+      openCopy.style.padding = "0 1.5rem 0 1.5rem";
+    }
+
+    function openItem(panel) {
+      panel.classList.add(copyOpen);
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.padding = "1rem 1.5rem 2rem 1.5rem";
+    }
+
+    let defaultPanel = document.querySelector(".accordion__copy");
+    if (defaultPanel) {
+      defaultPanel.classList.remove(copyOpen);
+      setTimeout(openItem, 1000, defaultPanel);
+    }
+  }());
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<style>
+	.wrap {
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.menu__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+	}
+	/*бургер для мобилки*/
+	.btn-menu {
+		width: 23px;
+		height: 23px;
+		background: #ff5c5c;
+	}
+</style>
+<div class="wrap">
+	
+	<nav class="menu" >
+		<div class="btn-menu" id="btn">
+			<span class="btn-menu__icon-bars"></span>
+			<span class="btn-menu__icon-bars"></span>
+			<span class="btn-menu__icon-bars"></span>
+		</div>
+		<!--ul>li*4>a[href=#]-->
+		<ul class="menu__list"id="mobyle" >
+			<li class="menu__item">
+				<a class="menu__link" href="#">Главная</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="#">лекции</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="#">контакты</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<script>
+  // мобильное меню
+  const burger = ()=> {
+    const navBtn = document.getElementById('mobyle');
+    navBtn.style.display === 'none' ? navBtn.style.display = 'block': navBtn.style.display = 'none';
+  };
+  document.getElementById('btn').addEventListener('click',burger);
+
+
+</script>
+</body>
+</html>

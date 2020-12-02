@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<style>
+	.container{
+		margin:auto;
+		width: 1200px;
+		max-width: 100%;
+		padding: 0 15px;
+	}
+	.footer {
+		width: 100%;
+		height:auto;
+		background-color:#595959;
+		color: #cccccc;
+	}
+	.footer__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.footer__contact,
+	.footer__map{
+		margin: 0 5px;
+		padding: 10px;
+		width:39%;
+	}
+	.footer__social{
+		width: 20%;
+	}
+	
+	
+	.footer__contact {
+		outline: 1px solid #ffffff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer__social {
+		outline: 1px solid #ffffff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	
+	}
+	.footer__map {
+	outline: 1px solid #ffffff;
+	}
+	.footer__title {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		color: #fff;
+		line-height: 36px;
+		letter-spacing: 0.5px;
+	}
+	.footer__address {
+		font-size: 1.3rem;
+		color: #d3d2d2;
+		margin-bottom: 20px;
+	}
+	.footer__phone {
+		display: block;
+		font-size: 1.4rem;
+		color: #ffffff;
+	}
+	.footer__copy {
+		background-color: #303030;
+	}
+	.copy__text {
+		text-align: center;
+		font-size: 0.8rem;
+		
+	}
+	.social {
+		width: 100%;
+	}
+	.footer__social {
+		display: flex;
+		justify-content: center;
+	}
+	.social__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		margin-right:4px;
+		background-color: #fff;
+		border: 1px solid #e8ecee;
+		transition: background .1s linear;
+	}
+	.social__item:hover {
+		background-color: #e8ecee;
+	}
+	.social__item:hover .social__icon {
+		fill: #000;
+	}
+	.social__icon {
+		display: block;
+		height: 18px;
+		fill: #c6cacc;
+		transition: fill .1s linear;
+	}
+	@media (max-width: 790px) {
+		.footer__inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.footer__title,
+		.footer__address{
+			text-align: center;
+		}
+		
+	}
+</style>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__contact">
+				<h4 class="footer__title">как нас найти?</h4>
+				<address class="footer__address">
+					<div class="footer__address"> ул.Ковзана строение 5</div>
+					<div>3й этаж</div>
+				</address>
+				<a class="footer__phone" href="tel:375444739481">+375 44 47-39-481</a>
+			</div>
+			<div class="footer__social social">
+				<div class="social__item" target="_blank">
+					<svg class="social__icon">
+						<use xlink:href="">
+						
+						</use>
+					</svg>
+				</div>
+				<div class="social__item" target="_blank">
+					<svg class="social__icon">
+						<use xlink:href=""></use>
+					</svg>
+				</div>
+			</div>
+			<div class="footer__map">
+			
+			</div>
+		</div>
+	</div>
+	<div class="footer__copy">
+		<div class="container">
+			<div class="copy__text">
+				© 2019. Все права защищены.
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

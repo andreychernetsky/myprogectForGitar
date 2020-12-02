@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	.container {
+		max-width: 1200px;
+		width: 100%;
+		padding: 0 12px;
+		margin: auto;
+	}
+	
+	.info {
+		width: 100%;
+		background: #53354a;
+		
+	}
+	
+	.info__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+	}
+	
+	.slider {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.info__slider {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	
+	.info__video,
+	.info__slider {
+		width: 50%;
+		padding: 10px;
+	}
+	
+	.slider__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.slider__title {
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 1.8rem;
+		color: #ffffff;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.slider__list {
+	
+	}
+	
+	.list__item {
+		font-size: 1.4rem;
+		color: #ffffff;
+	}
+	
+	span {
+		color: #ffc222;
+		font-size: 1.6rem;
+		font-weight: 700;
+	}
+	.dot {
+		text-align: center;
+	}
+	.dot__item {
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+	}
+	
+	.active, .dot__item:hover {
+		background-color: #717171;
+	}
+	/* Fading animation */
+	.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 1.5s;
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+	
+	@-webkit-keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+	}
+	
+	@keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+	}
+	
+	@media (max-width: 790px) {
+		.slider__item {
+			width: 100%;
+			
+			
+		}
+		.info__inner {
+			display: flex;
+			flex-flow: row wrap;
+			flex-direction: column;
+		}
+		
+		.info__video {
+			width: 100%;
+			
+		}
+		
+		.info__picture {
+			max-width: 100%;
+		}
+		
+		.info__slider {
+			max-width: 100%;
+			
+		}
+		
+		.slider__title {
+			text-align: center;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+	}
+
+</style>
+
+<section class="info">
+	<div class="container">
+		<div class="info__inner">
+			<div class="info__video">
+				<img class="info__picture" src="img/mainFoto/forSleder.png" alt="" width="100%">
+			</div><!--info__video-->
+			<section class="info__slider slider">
+				<article class="slider__item fade">
+					<h2 class="slider__title">
+						Обучение игре на гитаре
+					</h2>
+					<ul class="slider__list list">
+						<li class="list__item"><span>5-18 лет</span></li>
+						<li class="list__item">Изучение нотной грамоты.</li>
+						<li class="list__item">Изучаем построение аккордов</li>
+						<li class="list__item">Изучение различных видов боя и переборов</li>
+						<li class="list__item">Развиваем навык подбора по слуху</li>
+						<li class="list__item">Учимся подбирать аккорды к мелодиям и песням</li>
+						<li class="list__item">Знакомимся с импровизацией и сочинением музыки</li>
+						<li class="list__item">Исполнение классических пьес</li>
+					</ul>
+				</article>
+				<article class="slider__item fade">
+					<h2 class="slider__title">
+						Программы для работы с музыкой
+					</h2>
+					<ul class="slider__list list">
+						<li class="list__item">Sibelius</li>
+						<li class="list__item">Cubase</li>
+						<li class="list__item">Fruity loops</li>
+						<li class="list__item">Guitar pro</li>
+					</ul>
+				</article>
+				<article class="slider__item fade">
+					<h2 class="slider__title">
+						Игротека на развитие познавательных способностей ребенка
+					</h2>
+					<ul class="slider__list list">
+						<li class="list__item"><span>5-12 лет</span></li>
+						<li class="list__item">Фантазия и воображение</li>
+						<li class="list__item">Координация</li>
+						<li class="list__item">Пространственное мышление</li>
+						<li class="list__item">Реакция и наблюдательность</li>
+						<li class="list__item">Математический счет</li>
+						<li class="list__item">Речь и словарный запас</li>
+						<li class="list__item">Внимательность</li>
+						<li class="list__item">Ловкость</li>
+						<li class="list__item">Наблюдательность</li>
+						<li class="list__item">Стратегическое мышление</li>
+					</ul>
+				</article>
+				<!-- The dots/circles -->
+			</section><!--info__item-->
+		</div>
+		<div class="dot">
+			<span class="dot__item" onclick="currentSlide(1)"></span>
+			<span class="dot__item" onclick="currentSlide(2)"></span>
+			<span class="dot__item" onclick="currentSlide(3)"></span>
+		</div>
+	</div>  <!--container-->
+</section>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slider__item ");
+    let dots = document.getElementsByClassName("dot__item");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+
+</script>
+</body>
+</html>
