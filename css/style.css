@@ -203,7 +203,17 @@ body {
 	height: 1px;
 	margin: auto;
 }
-
+.video {
+	width: 100%;
+}
+.video__wrapp {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.video__item {
+	max-width: 300px;
+}
 .image {
 	padding-top: 1%;
 	width: 100%;
@@ -623,6 +633,16 @@ span {
 		color: #ffffff;
 		top:0;
 		left: -10px;
+	}
+	
+   .video__wrapp {
+		display: flex;
+		justify-content:center;
+	}
+
+	.video__item {
+		width: 100%;
+		margin-bottom: 5px;
 	}
 	.footer__inner {
 		display: -webkit-box;
