@@ -202,6 +202,7 @@ body {
 	background-color: #ddd;
 	height: 1px;
 	margin: auto;
+	margin:5px 0 5px 0;
 }
 .video {
 	width: 100%;
@@ -212,7 +213,8 @@ body {
 	flex-wrap: wrap;
 }
 .video__item {
-	max-width: 300px;
+	width: 31%;
+	margin-top:5px;
 }
 .image {
 	padding-top: 1%;
