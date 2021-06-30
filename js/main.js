@@ -1,4 +1,22 @@
 {
+  const charac = document.querySelector('.characteristics');
+  const burger = document.querySelector('.advice-btn');
+  const overlay = document.querySelector('.overlay');
+
+  burger.addEventListener('click',()=>{
+    charac.classList.add('open');
+    overlay.classList.add('open');
+  })
+
+  overlay.addEventListener('click',()=>{
+    charac.classList.remove('open');
+    overlay.classList.remove('open');
+  })
+  
+}
+
+// accordion
+{
   const accordion = () => {
     // Блок с аккордеоном.
     const characteristicsListElem = document
@@ -91,7 +109,7 @@
   accordion();
 }
 
-
+//кнопка на вверх
 {
   const anchors = document.querySelectorAll('a[href*="#"]')
 
