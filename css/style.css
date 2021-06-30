@@ -15,7 +15,12 @@ li {
 	margin: 0;
 	padding: 0;
 }
-
+body {
+	font-family: 'PT Serif', serif;
+	font-weight: 400;
+	font-size: 100%;
+	color: #5e5e5e;
+}
 .container {
 	width: 100%;
 	max-width: 1170px;
@@ -64,11 +69,30 @@ li {
 	font-size: 1.8rem;
 	color:#d61111;
 }
-body {
-	font-family: 'PT Serif', serif;
-	font-weight: 400;
-	font-size: 100%;
-	color: #5e5e5e;
+
+.topButton {
+	position: fixed;
+	font-size: 30px;
+	bottom: 40px;
+	right: 9px;
+	z-index: 99;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 30px;
+	background: #460546;
+	opacity: 0.3s;
+	color: rgb(223, 213, 213);
+	border-radius: 5%;
+	/* display:none;*/
+} 
+.topButton:hover {
+	background: rgb(138, 9, 9);
+	opacity: 1;
+}
+.topButton__show {
+	display: block;
 }
 .main {
 	margin:auto	;
@@ -182,6 +206,7 @@ body {
 */
 #modal {
 	display: none;
+	height: auto;
 }
 
 /*бургер для мобилки*/
@@ -207,14 +232,14 @@ body {
 /* карта сайта */
 .characteristics {
 width: 100%;
-
+max-width: 450px;
 }
 .characteristics__main-title {
 
 }
 .characteristics__list {
 	margin: auto;
-max-width: 350px;
+
 }
 .characteristics__item {
 	margin-bottom: 5px;
@@ -222,11 +247,13 @@ max-width: 350px;
 .characteristics__title {
 	position: relative;
     width: 100%;
-    padding: 12px 30px;
+	font-size: 20px;
+	padding: 7px 49px;
     background-color: transparent;
     text-align: left;
 	color: #520611;
 	background: rgba(190, 75, 9, 0.781);
+	text-align: center;
 }
 .characteristics__title:after {
     content: '';
@@ -264,13 +291,16 @@ max-width: 350px;
 }
 .characteristics__item-description {
 	display: flex;
-    align-items: center;
-    justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   padding: 0;
+   margin: 0;
 }
 .characteristics__link-description {
 display: block;
-padding: 15px 0;
+padding: 0px 0;
 padding-left: 5%;
+font-size: 18px;
 }
 .characteristics__link-description:last-child {
     text-align: right;
