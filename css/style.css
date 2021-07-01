@@ -253,7 +253,7 @@ body {
 	left: 10px;
 	top: 30px;
 	width: 60%;
-	height: 100vh;
+	height:80%;
 	transform: translateX(-150vw);
 	overflow-x: hidden;
 	overflow-y: auto;
