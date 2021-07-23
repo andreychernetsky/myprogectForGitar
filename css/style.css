@@ -153,7 +153,7 @@ body {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(100, 5, 92, 0.9);
+	/* background: rgba(241, 239, 241, 0.9); */
 	z-index: 99;
 	visibility: hidden;
 	opacity: 0;
@@ -279,7 +279,7 @@ body {
 	background-color: transparent;
 	text-align: left;
 	color: #eee7e8;
-	background: rgba(190, 75, 9, 0.781);
+	background: rgba(190, 75, 9, 0.9);
 	text-align: center;
 }
 
